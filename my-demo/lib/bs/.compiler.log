@@ -1,14 +1,14 @@
-#Start(1651322059514)
+#Start(1651323995916)
 
   Warning number 23
-  /home/cornelius/dev/rescript-first-impression/my-demo/src/components/zoo/Zoo.res:18:26-60
+  /home/cornelius/dev/rescript-first-impression/my-demo/src/components/zoo/Zoo.res:17:26-60
 
-  16 │ let reducer = (state, action) => {
-  17 │   switch action {
-  18 │   | AnimalSelected(a) => {...state, selectedAnimal: Some(a)}
-  19 │   }
-  20 │ }
+  15 │ let reducer = (state, action) => {
+  16 │   switch action {
+  17 │   | AnimalSelected(a) => {...state, selectedAnimal: Some(a)}
+  18 │   }
+  19 │ }
 
   All the fields are already explicitly listed in this record. You can remove the `...` spread.
 
-#Done(1651322059543)
+#Done(1651323995947)

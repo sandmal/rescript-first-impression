@@ -7,12 +7,36 @@ o App.cmi : cp ../bs/src/App.cmi
 o App.cmj : cp ../bs/src/App.cmj
 o App.cmt : cp ../bs/src/App.cmt
 o App.res : cp ../../src/App.res
+o Form.cmi : cp ../bs/src/pages/Form.cmi
+o Form.cmj : cp ../bs/src/pages/Form.cmj
+o Form.cmt : cp ../bs/src/pages/Form.cmt
+o Form.res : cp ../../src/pages/Form.res
+o About.cmi : cp ../bs/src/pages/About.cmi
+o About.cmj : cp ../bs/src/pages/About.cmj
+o About.cmt : cp ../bs/src/pages/About.cmt
+o About.res : cp ../../src/pages/About.res
+o Index.cmi : cp ../bs/src/pages/Index.cmi
+o Index.cmj : cp ../bs/src/pages/Index.cmj
+o Index.cmt : cp ../bs/src/pages/Index.cmt
+o Index.res : cp ../../src/pages/Index.res
+o FourOhFour.cmi : cp ../bs/src/pages/FourOhFour.cmi
+o FourOhFour.cmj : cp ../bs/src/pages/FourOhFour.cmj
+o FourOhFour.cmt : cp ../bs/src/pages/FourOhFour.cmt
+o FourOhFour.res : cp ../../src/pages/FourOhFour.res
+o Nav.cmi : cp ../bs/src/components/nav/Nav.cmi
+o Nav.cmj : cp ../bs/src/components/nav/Nav.cmj
+o Nav.cmt : cp ../bs/src/components/nav/Nav.cmt
+o Nav.res : cp ../../src/components/nav/Nav.res
 o Zoo.cmi : cp ../bs/src/components/zoo/Zoo.cmi
 o Zoo.cmj : cp ../bs/src/components/zoo/Zoo.cmj
 o Zoo.cmt : cp ../bs/src/components/zoo/Zoo.cmt
 o Zoo.res : cp ../../src/components/zoo/Zoo.res
+o SelectedAnimalHeader.cmi : cp ../bs/src/components/zoo/SelectedAnimalHeader.cmi
+o SelectedAnimalHeader.cmj : cp ../bs/src/components/zoo/SelectedAnimalHeader.cmj
+o SelectedAnimalHeader.cmt : cp ../bs/src/components/zoo/SelectedAnimalHeader.cmt
+o SelectedAnimalHeader.res : cp ../../src/components/zoo/SelectedAnimalHeader.res
 o Counter.cmi : cp ../bs/src/components/counter/Counter.cmi
 o Counter.cmj : cp ../bs/src/components/counter/Counter.cmj
 o Counter.cmt : cp ../bs/src/components/counter/Counter.cmt
 o Counter.res : cp ../../src/components/counter/Counter.res
-build install.stamp : touch App.cmi App.cmj Zoo.cmi Zoo.cmj Counter.cmi Counter.cmj 
+build install.stamp : touch App.cmi App.cmj Form.cmi Form.cmj About.cmi About.cmj Index.cmi Index.cmj FourOhFour.cmi FourOhFour.cmj Nav.cmi Nav.cmj Zoo.cmi Zoo.cmj SelectedAnimalHeader.cmi SelectedAnimalHeader.cmj Counter.cmi Counter.cmj 

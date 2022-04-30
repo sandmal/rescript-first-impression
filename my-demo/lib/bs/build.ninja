@@ -4,17 +4,35 @@ rule astj
   command = /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/rescript/linux/bsc.exe  -bs-v 9.1.4 -bs-jsx 3  -absname -bs-ast -o $out $i
 o src/App.ast : astj ../../src/App.res
 rule deps
-  command = /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/rescript/linux/bsb_helper.exe -hash f7a5d9dd0f5e30acbfd5033480804d29 $in
+  command = /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/rescript/linux/bsb_helper.exe -hash 4dfedb9f063ac0a8c17571dc472e67e8 $in
   restat = 1
 o src/App.d : deps src/App.ast
 rule mij
-  command = /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/rescript/linux/bsc.exe -I src/components/counter -I src/components/zoo -I src/components -I src -I /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/@rescript/react/lib/ocaml   -bs-package-name your-project-name -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  command = /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/rescript/linux/bsc.exe -I src/components/counter -I src/components/zoo -I src/components/nav -I src/components -I src/pages -I src -I /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/@rescript/react/lib/ocaml   -bs-package-name your-project-name -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
   dyndep = 1
   restat = 1
 o src/App.cmj src/App.cmi ../../src/App.bs.js : mij src/App.ast
+o src/pages/Form.ast : astj ../../src/pages/Form.res
+o src/pages/Form.d : deps src/pages/Form.ast
+o src/pages/Form.cmj src/pages/Form.cmi ../../src/pages/Form.bs.js : mij src/pages/Form.ast
+o src/pages/About.ast : astj ../../src/pages/About.res
+o src/pages/About.d : deps src/pages/About.ast
+o src/pages/About.cmj src/pages/About.cmi ../../src/pages/About.bs.js : mij src/pages/About.ast
+o src/pages/Index.ast : astj ../../src/pages/Index.res
+o src/pages/Index.d : deps src/pages/Index.ast
+o src/pages/Index.cmj src/pages/Index.cmi ../../src/pages/Index.bs.js : mij src/pages/Index.ast
+o src/pages/FourOhFour.ast : astj ../../src/pages/FourOhFour.res
+o src/pages/FourOhFour.d : deps src/pages/FourOhFour.ast
+o src/pages/FourOhFour.cmj src/pages/FourOhFour.cmi ../../src/pages/FourOhFour.bs.js : mij src/pages/FourOhFour.ast
+o src/components/nav/Nav.ast : astj ../../src/components/nav/Nav.res
+o src/components/nav/Nav.d : deps src/components/nav/Nav.ast
+o src/components/nav/Nav.cmj src/components/nav/Nav.cmi ../../src/components/nav/Nav.bs.js : mij src/components/nav/Nav.ast
 o src/components/zoo/Zoo.ast : astj ../../src/components/zoo/Zoo.res
 o src/components/zoo/Zoo.d : deps src/components/zoo/Zoo.ast
 o src/components/zoo/Zoo.cmj src/components/zoo/Zoo.cmi ../../src/components/zoo/Zoo.bs.js : mij src/components/zoo/Zoo.ast
+o src/components/zoo/SelectedAnimalHeader.ast : astj ../../src/components/zoo/SelectedAnimalHeader.res
+o src/components/zoo/SelectedAnimalHeader.d : deps src/components/zoo/SelectedAnimalHeader.ast
+o src/components/zoo/SelectedAnimalHeader.cmj src/components/zoo/SelectedAnimalHeader.cmi ../../src/components/zoo/SelectedAnimalHeader.bs.js : mij src/components/zoo/SelectedAnimalHeader.ast
 o src/components/counter/Counter.ast : astj ../../src/components/counter/Counter.res
 o src/components/counter/Counter.d : deps src/components/counter/Counter.ast
 o src/components/counter/Counter.cmj src/components/counter/Counter.cmi ../../src/components/counter/Counter.bs.js : mij src/components/counter/Counter.ast

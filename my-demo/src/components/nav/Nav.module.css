@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  gap: 1rem;
+  background-color: steelblue;
+  color: white;
+  padding: 1rem;
+  font-size: 1.25rem ;
+}
+
+.link{
+  cursor: pointer;
+}
+
+.link:hover{
+  text-decoration: underline;
+}

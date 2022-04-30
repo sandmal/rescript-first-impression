@@ -6,5 +6,8 @@ let make = () => {
     <button onClick={_ => setCount(prev => prev + 1)}> {"Increment"->React.string} </button>
     <button onClick={_ => setCount(prev => prev - 1)}> {"Decrement"->React.string} </button>
     <button onClick={_ => setCount(_ => 0)}> {"Reset"->React.string} </button>
+    <br/>
+    <br/>
+    <button onClick={_ => RescriptReactRouter.push("zoo")}>{"Go to zoo"-> React.string}</button>
   </>
 }

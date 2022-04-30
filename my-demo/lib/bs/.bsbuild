@@ -1,7 +1,13 @@
-3
+9
 App
+Nav
 Zoo
+Form
+About
+Index
 Counter
-src	src/components/zoo	src/components/counter	
-1
+FourOhFour
+SelectedAnimalHeader
+src	src/components/nav	src/components/zoo	src/pages	src/components/counter	
+1	
 0

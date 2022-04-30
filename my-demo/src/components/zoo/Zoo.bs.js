@@ -2,6 +2,7 @@
 
 import * as Curry from "rescript/lib/es6/curry.js";
 import * as React from "react";
+import * as SelectedAnimalHeader from "./SelectedAnimalHeader.bs.js";
 
 import './zoo.css'
 ;
@@ -39,7 +40,9 @@ function getAnimalString(a) {
 function Zoo(Props) {
   var match = React.useReducer(reducer, state);
   var dispatch = match[1];
-  return React.createElement(React.Fragment, undefined, React.createElement("h3", undefined, "Selected animal is " + getAnimalString(match[0].selectedAnimal)), React.createElement("button", {
+  return React.createElement(React.Fragment, undefined, React.createElement(SelectedAnimalHeader.make, {
+                  description: getAnimalString(match[0].selectedAnimal)
+                }), React.createElement("button", {
                   onClick: (function (param) {
                       return Curry._1(dispatch, /* AnimalSelected */{
                                   _0: /* Zebra */0

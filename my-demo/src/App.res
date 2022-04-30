@@ -1,7 +1,11 @@
 @react.component
 let make = () => {
-  <> 
-  /* <h1> {"Hello World"->React.string} </h1> <Counter />  */
-  <Zoo />
-  </>
+  let url = RescriptReactRouter.useUrl()
+  
+  switch (url.path) {
+      | list{} => <Index />
+      | list{"about"}=> <About />
+      | list{"form"}=> <Form />
+      | _=> <FourOhFour/>
+    }
 }

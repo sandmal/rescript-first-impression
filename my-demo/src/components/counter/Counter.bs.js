@@ -2,6 +2,7 @@
 
 import * as Curry from "rescript/lib/es6/curry.js";
 import * as React from "react";
+import * as RescriptReactRouter from "@rescript/react/src/RescriptReactRouter.bs.js";
 
 function Counter(Props) {
   var match = React.useState(function () {
@@ -26,7 +27,11 @@ function Counter(Props) {
                                     return 0;
                                   }));
                     })
-                }, "Reset"));
+                }, "Reset"), React.createElement("br", undefined), React.createElement("br", undefined), React.createElement("button", {
+                  onClick: (function (param) {
+                      return RescriptReactRouter.push("zoo");
+                    })
+                }, "Go to zoo"));
 }
 
 var make = Counter;

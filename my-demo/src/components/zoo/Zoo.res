@@ -1,6 +1,5 @@
 %%raw("import './zoo.css'")
 
-
 type height = int
 type isBarking = bool
 type animal = Zebra | Giraffe(height) | Dog(isBarking)
@@ -41,7 +40,7 @@ let make = () => {
   let (state, dispatch) = React.useReducer(reducer, state)
 
   <>
-    <h3> {("Selected animal is " ++ getAnimalString(state.selectedAnimal))->React.string} </h3>
+    <SelectedAnimalHeader description={state.selectedAnimal -> getAnimalString} />
     <button onClick={_ => Zebra->AnimalSelected->dispatch}> {"Select Zebra"->React.string} </button>
     <button onClick={_ => Giraffe(10)->AnimalSelected->dispatch}>
       {"Select Giraffe"->React.string}

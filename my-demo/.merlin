@@ -7,6 +7,10 @@ S /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/@rescript/r
 B /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/@rescript/react/lib/ocaml
 S src
 B lib/bs/src
+S src/pages
+B lib/bs/src/pages
+S src/components/nav
+B lib/bs/src/components/nav
 S src/components/zoo
 B lib/bs/src/components/zoo
 S src/components/counter
