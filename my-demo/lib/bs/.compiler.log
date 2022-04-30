@@ -1,2 +1,14 @@
-#Start(1651318142009)
-#Done(1651318142044)
+#Start(1651322059514)
+
+  Warning number 23
+  /home/cornelius/dev/rescript-first-impression/my-demo/src/components/zoo/Zoo.res:18:26-60
+
+  16 │ let reducer = (state, action) => {
+  17 │   switch action {
+  18 │   | AnimalSelected(a) => {...state, selectedAnimal: Some(a)}
+  19 │   }
+  20 │ }
+
+  All the fields are already explicitly listed in this record. You can remove the `...` spread.
+
+#Done(1651322059543)

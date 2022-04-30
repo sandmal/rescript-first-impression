@@ -1,6 +1,7 @@
-2
+3
 App
+Zoo
 Counter
-src	src/components	
-1
+src	src/components/zoo	src/components/counter	
+1
 0

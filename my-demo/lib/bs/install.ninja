@@ -7,8 +7,12 @@ o App.cmi : cp ../bs/src/App.cmi
 o App.cmj : cp ../bs/src/App.cmj
 o App.cmt : cp ../bs/src/App.cmt
 o App.res : cp ../../src/App.res
-o Counter.cmi : cp ../bs/src/components/Counter.cmi
-o Counter.cmj : cp ../bs/src/components/Counter.cmj
-o Counter.cmt : cp ../bs/src/components/Counter.cmt
-o Counter.res : cp ../../src/components/Counter.res
-build install.stamp : touch App.cmi App.cmj Counter.cmi Counter.cmj 
+o Zoo.cmi : cp ../bs/src/components/zoo/Zoo.cmi
+o Zoo.cmj : cp ../bs/src/components/zoo/Zoo.cmj
+o Zoo.cmt : cp ../bs/src/components/zoo/Zoo.cmt
+o Zoo.res : cp ../../src/components/zoo/Zoo.res
+o Counter.cmi : cp ../bs/src/components/counter/Counter.cmi
+o Counter.cmj : cp ../bs/src/components/counter/Counter.cmj
+o Counter.cmt : cp ../bs/src/components/counter/Counter.cmt
+o Counter.res : cp ../../src/components/counter/Counter.res
+build install.stamp : touch App.cmi App.cmj Zoo.cmi Zoo.cmj Counter.cmi Counter.cmj 

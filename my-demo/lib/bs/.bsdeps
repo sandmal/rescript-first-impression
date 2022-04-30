@@ -3,6 +3,8 @@
 0
 bsconfig.json	0x1.89abaf31f283bp+30
 src	0x1.89b4547c56e63p+30
-src/components	0x1.89b4547c6b611p+30
+src/components	0x1.89b47a94c7e54p+30
+src/components/zoo	0x1.89b4b1d1d8bf4p+30
+src/components/counter	0x1.89b47a24c8029p+30
 ===
 /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/rescript/linux/rescript.exe	0x1.89b4522202b0cp+30

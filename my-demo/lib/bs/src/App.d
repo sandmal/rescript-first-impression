@@ -1,1 +1,1 @@
-src/App.cmj : src/components/Counter.cmj src/components/Counter.cmi
+src/App.cmj : src/components/zoo/Zoo.cmj src/components/zoo/Zoo.cmi
