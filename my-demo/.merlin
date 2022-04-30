@@ -7,4 +7,6 @@ S /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/@rescript/r
 B /home/cornelius/dev/rescript-first-impression/my-demo/node_modules/@rescript/react/lib/ocaml
 S src
 B lib/bs/src
+S src/components
+B lib/bs/src/components
 ####BSB GENERATED: NO EDIT}
